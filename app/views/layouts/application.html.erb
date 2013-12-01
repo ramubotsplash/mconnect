@@ -8,6 +8,22 @@
 </head>
 <body>
 
+  <header>
+    <section>
+      <div id="title">
+        <h1><%= @title %></h1>
+        <h2><%= @subtitle %></h2>
+      </div>
+      <nav>
+        <%= link_to_unless_current "Home", root_path %>
+      </nav>
+    </section>
+  </header>
+
+    <% if flash[:error] %>
+    <div id="error"><%= flash[:error] %></div>
+    <% end %>
+    
 <%= yield %>
 
 </body>
