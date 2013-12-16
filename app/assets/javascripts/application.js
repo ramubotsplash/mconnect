@@ -10,8 +10,26 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery-2.0.3.min.js
+//= require jquery-migrate-1.2.1.min.js
+//= require bootstrap
+//= require jquery-ui-1.10.3.custom
+//= require jquery.ui.touch-punch
+//= require jquery.sparkline
+//= require fullcalendar
+//= require jquery.autosize
+//= require jquery.placeholder
+//= require moment
+//= require daterangepicker
+//= require jquery.easy-pie-chart
+//= require jquery.dataTables
+//= require dataTables.bootstrap
 //= require angular
 //= require angular-animate
 //= require angular-resource
 //= require turbolinks
-//= require_tree .
+//= require custom
+//= require core
+//= require pages/index
+
+
