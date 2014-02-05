@@ -37,13 +37,16 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
-gem 'nokogiri'
+#gem 'nokogiri'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+group :stack do
+  gem 'unicorn'
+	gem 'foreman'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -52,7 +55,10 @@ gem 'nokogiri'
 # gem 'debugger', group: [:development, :test]
 
 group :development, :test do
-  gem "guard"
+  gem 'faker'
+	gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+	gem "guard"
   gem "guard-rspec"
   gem "rspec-rails", '2.14.0'
   gem "capybara"
