@@ -191,7 +191,6 @@ PLATFORMS
 DEPENDENCIES
   angularjs-rails
   capybara
-  coffee-rails (= 4.0.1)
   factory_girl_rails
   faker
   foreman
