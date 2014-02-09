@@ -30,6 +30,5 @@
 //= require turbolinks
 //= require custom
 //= require core
-//= require pages/index
 
 
